@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+html{
+    @apply scroll-smooth;
+}
+/* **********toggle into nav********* */
+.all-center {
+    @apply grid justify-center justify-items-center;
+}
+.nav-toggle-span{
+    @apply px-8 p-4 text-3xl font-Jaro text-emerald-100 tracking-normal cursor-pointer;
+}
+.nav{
+    @apply lg:bg-transparent lg:block transition-all ease-in-out duration-700;
+}
+.slide-btn{
+    @apply fixed px-[22px] py-[15px] bg-emerald-600 hover:bg-emerald-500 duration-100 hover:scale-105 rounded-full shadow border cursor-pointer;
+}
+/* **********menu****** */
+.nav-active{
+    @apply text-yellow-200 underline;
+}
+.ul-li{
+    @apply text-center pt-5 font-Roboto font-medium text-emerald-200 cursor-pointer hover:underline underline-offset-8 duration-300;
+}
+.lg-ul-li{
+    @apply lg:px-5 lg:pt-[27px] lg:text-[17.5px] lg:text-emerald-50  lg:hover:text-yellow-200 duration-200 lg:tracking-wide;
+}
+.register-btn{
+    @apply px-6 transition-all duration-700 hover:bg-emerald-500 hover:text-white font-Roboto font-semibold rounded-full py-3  text-emerald-900 bg-teal-100 cursor-pointer;
+}
+.searc-btn{
+    @apply py-[14px] px-[50px]  font-Roboto bg-emerald-200 rounded-full transition-all duration-700 ;
+}
+.about-us-div{
+    @apply pt-[100px] mx-[30px] md:mx-[100px] lg:flex lg:justify-center lg:gap-10 ;
+}
+.btn-s-header{
+    @apply text-center text-emerald-700 font-Oswald text-xl first-letter:text-2xl font-bold tracking-wider animate-bounce;
+}
+.about-us{
+    @apply text-emerald-700 transition-all duration-700;
+}
+.about-us-img{
+    @apply x-sm:w-full x-sm:h-[370px] lg:min-w-[400px] lg:min-h-[500px] 1xl:min-h-[470px];
+}
+.about-us-menu{
+    @apply text-slate-500 hover:text-slate-700 hover:cursor-pointer;
+}
+/* *********About us Loging Form********** */
+.card-hidden{
+     @apply hidden transition-all scale-90 duration-300;
+}
+.active{
+     @apply text-green-500;
+}
+.active_bg{
+     @apply bg-emerald-50;
+}
+.reviw_color{
+     @apply text-yellow-500;
+}
+.booking-img {
+     @apply w-full bg-cover bg-center h-[530px] text-white;
+}
+.book-now-menu{
+     @apply mx-auto w-[500px] mt-9;
+}
+.book-now-menu ul{
+     @apply flex justify-center w-[75%] mx-auto my-2 outline-none border-none rounded-full  bg-emerald-50 text-gray-950 font-Roboto font-bold text-lg shadow-lg;
+}
+.book-now-menu ul li{
+     @apply mx-5 my-3 flex gap-0 outline-none border-none cursor-pointer tracking-wider;
+}
+.book-now-card{
+     @apply h-[400px] mb-[10px] x-sm:mx-[30px] mx-[150px] rounded-md;
+}
+.book-now-h1{
+     @apply font-Jaro x-sm:text-[30px] text-4xl text-center text-green-50 x-sm:tracking-normal;
+}
+.book-card-p{
+     @apply h-[35px] text-white text-center my-[28px];
+}
+.book-card-p-input{
+     @apply h-[50px] w-[250px] outline-none rounded-lg text-center bg-gray-600 placeholder:font-Roboto;
+}
+.book-now-input{
+     @apply outline-none bg-gray-600 w-[95%] placeholder:font-Roboto text-center placeholder:text-center;
+}
+.book-now-next-btn{
+     @apply w-[250px] py-[16px] font-bold rounded-full bg-green-500 duration-200 hover:bg-green-400 hover:scale-95;
+}
+.card-three{
+     @apply text-xl text-center w-[300px] h-[60px]  py-4 rounded-md  bg-emerald-400;
+}
+ /* ***********Card Four*************** */
+ .card-three-h{
+   @apply sm:mx-[80px] lg:mx-[150px] xl:mx-[200px] rounded-lg bg-gray-600 text-center text-white text-2xl font-bold font-Roboto py-4;
+ }
+ .card-three-p{
+   @apply font-Roboto text-gray-800 font-bold ;
+ }
+ .card-three-span{
+   @apply font-Roboto font-normal text-white;
+ }
+ .card-four-btn{
+   @apply bg-emerald-400 text-white  duration-200 hover:shadow-2xl hover:scale-95 rounded-full px-[30px] font-Roboto text-lg font-medium py-2 mb-5 tracking-wide;
+ }
+/* *************services************** */
+.services{
+    @apply text-center text-[38px] font-Jaro tracking-widest;
+}
+.card-container{
+    @apply grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-[45px] x-sm:mx-[30px]  sm:mx-[50px] md:mx-[100px];
+}
+.services-card{
+   @apply shadow-lg hover:drop-shadow-2xl hover:bg-emerald-100 hover:duration-500 rounded-md border-emerald-700 border-t-8 x-sm:hover:scale-105 lg:hover:scale-110 duration-100;
+}
+.services-card h2{
+    @apply text-emerald-700 font-Jaro text-xl mx-4 mt-5 ;
+}
+.services-card p{
+    @apply mx-4 my-6 text-slate-500;
+}
+.services-card h1{
+    @apply mr-6 my-8 text-right;
+}
+.services-card h1 i{
+    @apply text-emerald-700 pb-5;
+}
+/* *****Destination***** */
+/* *********js*****class */
+.hide{
+    @apply hidden;
+}
+.reating_active{
+    @apply text-yellow-400 duration-300;
+}
+.click_Rotet{
+    @apply rotate-90;
+}
+.show{
+    @apply block;
+}
+.gallery-menu-ul-li{
+    @apply px-[10px] text-lg lg:px-6 py-4 cursor-pointer;
+}
+.color_toggle{
+    @apply transition-colors text-yellow-500 duration-200;
+}
+.progress-div{
+    @apply flex gap-2 mb-[10px];
+}
+.progress-text{
+    @apply font-Oswald ml-0 text-[18px] leading-[21px] text-emerald-700;
+}
+.transiton-progress{
+    @apply transition-all ease-in-out duration-700;
+}
+.images-list-div{
+    @apply x-sm:w-[100px] md:w-[150px] lg:w-[200px] 1xl:w-[240px] h-[200px] hover:shadow-2xl duration-200 scale-[.9] hover:scale-100;
+}
+.destanation-display-img{
+    @apply mx-auto w-[90%] bg-cover bg-center h-[250px] lg:h-[300px] 1xl:xl:h-[100%] p-1 lg:p-0 shadow-md cursor-pointer rounded-md  duration-200;
+}
+.images-list-img{
+    @apply x-sm:w-[100px] md:w-[150px] lg:w-[200px] 1xl:w-[240px] h-[200px] p-1 shadow-lg cursor-pointer rounded-md bg-cover object-cover;
+}
+ /* *****Awesome-card-container***** */
+ /* ***js class*** */
+ .menu_li{
+    @apply text-green-700 font-bold text-lg;
+ }
+ .hide{
+    @apply hidden;
+ }
+ .loging_boking_p{
+    @apply font-Roboto text-[20px] text-green-700 font-bold animate-tada;
+ }
+.lorem_P {
+    @apply text-4xl mt-0  mb-[30px] tracking-widest font-Oswald text-center;
+}
+/* /* ***js class***End * */
+.awesome-car-container{
+    @apply my-[50px] mx-[50px] grid x-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5;
+}
+.awesome-car-container .awesome-card{
+    @apply shadow-xl mb-10;
+}
+.awesome-car-container .img-div{
+    @apply overflow-hidden;
+}
+.awesome-car-container .img-div img{
+    @apply mx-auto x-sm:h-[300px] md:h-[200px] w-full cursor-pointer duration-200 hover:scale-125;
+}
+.awesome-car-container .list ul{
+    @apply flex justify-between text-center;
+}
+.awesome-car-container .list ul li{
+    @apply border-b w-full py-3;
+}
+.awesome-car-container .list ul li i{
+    @apply text-emerald-700 pr-1;
+}
+.awesome-car-container .dolar-section{
+    @apply text-center py-[20px] font-Oswald font-bold text-2xl;
+}
+.awesome-car-container .dolar-section p i{
+    @apply text-yellow-500 cursor-pointer;
+}
+.book-now-div{
+    @apply text-center pt-5 pb-8;
+}
+.book-now{
+    @apply bg-emerald-500 text-white px-5 py-2 rounded-3xl cursor-pointer drop-shadow-2xl hover:bg-emerald-700 duration-300;
+}
+/* **loging form** */
+.log-form{
+    @apply  grid x-sm:grid-cols-1  lg:grid-cols-2 x-sm:m-0 m-[50px] pb-5 bg-emerald-50 shadow-xl;
+}
+.log-form .sing-up{
+    @apply container;
+}
+.log-form .info{
+    @apply pl-5 pr-10 x-sm:pt-0 lg:pt-[70px];
+}
+.log-form .info input{
+    @apply p-4 mt-[5px] w-full border outline-none focus:border-emerald-900;
+}
+/* ***Travel Guide*** */
+.gide{
+    @apply mx-[100px] grid justify-center x-sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 1xl:grid-cols-4 gap-5;
+}
+.gide-card{
+    @apply bg-white shadow-2xl hover:scale-105 duration-200 cursor-pointer;
+}
+.gide-card img{
+    @apply bg-contain ;
+}
+.gide .social-icons{
+    @apply mt-[-25px] flex gap-[10px] justify-center items-center;
+}
+.gide-card .social-icons strong{
+    @apply w-[50px] h-[50px] p-[5px] bg-white text-emerald-700 rounded-full shadow-2xl cursor-pointer;
+}
+.gide-card .social-icons strong:first-child:hover{
+    @apply bg-blue-600 text-white transition-colors;
+}
+.gide-card .social-icons strong:nth-child(2):hover{
+    @apply bg-blue-500 text-white transition-colors;
+}
+.gide-card .social-icons strong:nth-child(3):hover{
+    @apply bg-red-400 text-white transition-colors;
+}
+.gide-card .social-icons strong i{
+    @apply text-[28px] px-[9px] py-[5px];
+}
+.gide .title{
+    @apply text-center pt-5 pb-10;
+}
+.gide .title h1{
+    @apply text-center font-Oswald text-2xl font-bold tracking-wider;
+}
+.gide .title p{
+    @apply text-lg font-bold;
+}
+/* ***Testimonial*** */
+/* js class */
+.slide-container .dragging .slide{
+    @apply cursor-grab select-none scroll-auto;
+}
+.main-container{
+    @apply mx-auto mb-[50px] w-[100%] max-w-[1130px];
+}
+.left-arrow{
+    @apply absolute top-[40%] px-[18px] py-3 text-emerald-800 bg-emerald-200 cursor-pointer shadow-2xl font-bold rounded-full;
+}
+.right-arrow{
+    @apply  absolute top-[40%] right-[16px] px-[18px] py-3 text-emerald-800 bg-emerald-200 shadow-2xl cursor-pointer font-bold rounded-full;
+}
+.slide-container{
+    @apply grid grid-flow-col auto-cols-auto  px-5 gap-8 mx-[100px] w-[80%] overflow-hidden scroll-smooth;
+}
+.slide-container .slide{
+    @apply bg-emerald-100 rounded-lg shadow-card-shadow cursor-pointer min-w-[400px] mt-[100px] mb-[30px];
+}
+.slide-container .slide img{
+    @apply bottom-[100px] mt-[-100px] mx-auto w-[130px] h-[130px] rounded-full border-solid border-4 shadow-md;
+}
+.slide-container .slide div{
+    @apply text-center;
+}
+.slide-container .slide div .item{
+    @apply flex justify-center float-end items-center w-[50px] h-[50px] text-emerald-600 text-2xl bg-emerald-100 mt-[-55px] mr-[-20px] p-1 shadow-2xl rounded-full;
+}
+.slide-container .slide div .item span{
+    @apply text-center font-Jaro;
+}
+.slide-container .slide div h1{
+    @apply text-center font-Jaro text-4xl mb-5 text-emerald-600;
+}
+.slide-container .slide div p{
+    @apply text-center font-Roboto text-lg mb-7 px-[30px];
+}
+
+}
